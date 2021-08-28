@@ -1,0 +1,191 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&family=Rubik:wght@500;600;800&display=swap');
+
+body {
+    background-color: #F7F6F2;
+    color: #1b1b1b;
+    font-family: 'Poppins', sans-serif;
+}
+
+/* Navbar */
+nav .xii {
+    font-weight: bold;
+}
+
+.nav-link:hover {
+    color: #777373 !important;
+}
+
+.navbar-toggler:focus,
+.navbar-toggler {
+    outline: none;
+    box-shadow: none;
+}
+
+.navbar-toggler-icon {
+    width: 20px;
+}
+
+/* Akhir Navbar */
+
+.img-header {
+    width: 300px;
+}
+
+.underline-small {
+    position: relative;
+    z-index: 10;
+}
+
+.underline-small::after {
+    content: '';
+    z-index: -9;
+    height: 10px;
+    width: 80%;
+    background-color: #5089C6;
+    position: absolute;
+    left: 12%;
+    bottom: 5px;
+}
+
+.underline-small-b {
+    position: relative;
+    z-index: 10;
+}
+
+.underline-small-b::after {
+    content: '';
+    z-index: -9;
+    height: 10px;
+    width: 80%;
+    background-color: #1d4d81;
+    position: absolute;
+    left: 12%;
+    bottom: 5px;
+}
+
+.putih {
+    color: #F7F6F2;
+}
+
+h1 {
+    font-family: 'Rubik', sans-serif;
+    font-weight: 500;
+}
+
+.biru {
+    background-color: #5089C6;
+}
+
+.nav-link {
+    color: #1b1b1b !important;
+
+}
+
+/* Kalender */
+.kalender {
+    width: 170px;
+    background-color: #F7F6F2;
+    text-align: center;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.kalender #nBulan {
+    background-color: #F0E5CF;
+    padding: 7px;
+    font-weight: bold;
+    margin-bottom: 0;
+}
+
+.kalender #nHari {
+    color: #585252;
+    margin-top: 10px;
+    margin-bottom: 0;
+}
+
+.kalender #hTanggal {
+    font-size: 40px;
+    font-weight: bolder;
+    margin-bottom: 0;
+}
+
+.kalender #tahun {
+    color: #585252;
+    margin-bottom: 10px;
+}
+
+/* Clock */
+.clock {
+    display: flex;
+    align-items: center;
+    font-family: 'Rubik', sans-serif;
+}
+
+.clock div {
+    background-color: #F7F6F2;
+    width: 80px;
+    height: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 8px;
+    font-size: 20px;
+
+}
+
+.clock span {
+    color: #F7F6F2;
+    font-size: 20px;
+    font-weight: bolder;
+}
+
+/* Akhir clock */
+
+.tugas {
+    background-color: #F0E5CF;
+    border-radius: 8px;
+    padding: 30px 10px;
+}
+
+.tugas h5 {
+    font-weight: bold;
+}
+
+
+/* Icon */
+.bi-heart-fill:hover {
+    color: #F43B86;
+    transition-duration: 0.3s;
+}
+
+.footer-text {
+    font-size: 13px;
+}
+
+
+
+/* DESKTOP */
+@media (min-width: 992px) {
+    .nav-link {
+        margin-left: 20px;
+        text-transform: uppercase;
+    }
+
+    .img-header {
+        width: 400px;
+    }
+
+    .clock div {
+        width: 100px;
+        height: 100px;
+        font-size: 30px;
+    }
+
+    .kalender {
+        width: 200px;
+    }
+    
+.footer-text {
+    font-size: 16px;
+}
+}
