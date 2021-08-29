@@ -158,3 +158,27 @@ var x = setInterval(function () {
     }
 
 }, 1000);
+
+
+// Jadwal Pelajaran Filter
+const filterItem = document.querySelector('.jadwalFilter');
+const filterBox = document.querySelectorAll('.itemBox');
+
+window.onload = () => {
+    filterItem.onclick = (selectedItem) => {
+        if(selectedItem.target.classList.contains("list")){
+            filterItem.querySelector(".active").classList.remove("active");
+            selectedItem.target.classList.add("active");
+            let filterName = selectedItem.target.getAttribute("data-name");
+            filterBox.forEach((itemBox)=>{
+                let filterJadwal = itemBox.getAttribute("data-name");
+                if((filterJadwal == filterName) || filterName == "semua") {
+                    itemBox.classList.add("show");
+                } else {
+                    itemBox.classList.add("hide");
+                    itemBox.classList.remove("show");
+                }
+            });
+        }
+    }
+}

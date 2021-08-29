@@ -159,16 +159,16 @@
 
             <div class="jadwalFilter">
                 <ul class="p-0">
-                    <li class="list active" data-filter="Semua">Semua</li>
-                    <li class="list" data-filter="senin">Senin</li>
-                    <li class="list" data-filter="selasa">Selasa</li>
-                    <li class="list" data-filter="rabu">Rabu</li>
-                    <li class="list" data-filter="kamis">Kamis</li>
-                    <li class="list" data-filter="jumat">Jum'at</li>
+                    <li class="list active" data-name="semua">Semua</li>
+                    <li class="list" data-name="senin">Senin</li>
+                    <li class="list" data-name="selasa">Selasa</li>
+                    <li class="list" data-name="rabu">Rabu</li>
+                    <li class="list" data-name="kamis">Kamis</li>
+                    <li class="list" data-name="jumat">Jum'at</li>
                 </ul>
             </div>
             <div class="daftarHariTabel">
-                <div class="itemBox senin table-responsive">
+                <div class="itemBox senin table-responsive" data-name="senin">
                     <div class="table-jadwal">
                         <table>
                             <thead>
@@ -203,7 +203,7 @@
                         </table>
                     </div>
                 </div>
-                <div class="itemBox selasa table-responsive">
+                <div class="itemBox selasa table-responsive" data-name="selasa">
                     <div class="table-jadwal">
                         <table>
                             <thead>
@@ -233,7 +233,7 @@
                         </table>
                     </div>
                 </div>
-                <div class="itemBox rabu table-responsive">
+                <div class="itemBox rabu table-responsive" data-name="rabu">
                     <div class="table-jadwal">
                         <table>
                             <thead>
@@ -258,7 +258,7 @@
                         </table>
                     </div>
                 </div>
-                <div class="itemBox kamis table-responsive">
+                <div class="itemBox kamis table-responsive" data-name="kamis">
                     <div class="table-jadwal">
                         <table>
                             <thead>
@@ -288,7 +288,7 @@
                         </table>
                     </div>
                 </div>
-                <div class="itemBox jumat table-responsive">
+                <div class="itemBox jumat table-responsive" data-name="jumat">
                     <div class="table-jadwal">
                         <table>
                             <thead>
@@ -369,29 +369,29 @@
 
 
     <!-- Jquerry -->
-    <script src="https://code.jquery.com/jquery-3.6.0.js"
-        integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+    <!-- <script src="https://code.jquery.com/jquery-3.6.0.js"
+        integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script> -->
 
-    <script>
+    <!-- <script>
         $(document).ready(function () {
 
             $('.list').click(function () {
                 const value = $(this).attr('data-filter');
-                if (value == 'Semua') {
+                if (value == 'semua') {
                     $('.itemBox').not('.' + value).hide('1000');
                 } else {
-                    $('.itemBox').not('.' + value).hide('1000');;
+                    $('.itemBox').not('.' + value).hide('1000');
                     $('.itemBox').filter('.' + value).show(1000);
                 }
 
                 $('this').addClass('active').siblings().removeClass('active');
             })
 
-            // $('.list').click(function () {
-            //     $('this').addClass('active').siblings().removeClass('active');
-            // })
+            $('.list').click(function () {
+                $('this').addClass('active').siblings().removeClass('active');
+            })
         })
-    </script>
+    </script> -->
 
     <!-- Bootstrap JS -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js"
