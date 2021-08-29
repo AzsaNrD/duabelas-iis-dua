@@ -11,6 +11,15 @@ nav .xii {
     font-weight: bold;
 }
 
+.navbar-nav {
+    cursor: pointer;
+}
+
+.nav-link {
+    color: #1b1b1b !important;
+
+}
+
 .nav-link:hover {
     color: #777373 !important;
 }
@@ -76,10 +85,57 @@ h1 {
     background-color: #5089C6;
 }
 
-.nav-link {
-    color: #1b1b1b !important;
-
+/* List jadwal pelajaran */
+.jadwalFilter ul {
+    display: flex;
+    flex-wrap: wrap;
 }
+
+.jadwalFilter ul li {
+    color: #464343;
+    list-style: none;
+    background: #F7F6F2;
+    padding: 8px 20px;
+    margin: 5px;
+    letter-spacing: 1px;
+    border-radius: 8px;
+    cursor: pointer;
+
+    --tw-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.06);
+    box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
+}
+
+.jadwalFilter ul li.active {
+    background-color: #F0E5CF;
+}
+
+.table-jadwal table, th, td {
+    color: #464343;
+    border-collapse: collapse;
+    padding: 15px;
+}
+
+table {
+    width: 600px;
+    margin: 5px;
+}
+
+.daftarHariTabel {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.table-jadwal table th {
+    color: #1b1b1b;
+    background-color: #F0E5CF;
+}
+.table-jadwal table tr {
+    background-color: #F7F6F2;
+}
+.table-jadwal table tr:nth-child(odd) {
+    background-color: #f1f1ee;
+}
+
 
 /* Kalender */
 .kalender {
@@ -161,6 +217,8 @@ h1 {
     color: #F43B86;
     transition-duration: 0.3s;
 }
+
+/* Akhir icon */
 
 .footer-text {
     font-size: 13px;
