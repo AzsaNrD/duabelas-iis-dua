@@ -153,13 +153,14 @@
 
     <section id="jadwalPelajaran" class="mx-auto biru putih pt-4">
         <div class="container">
-            <div class=" user-select-none" data-aos="fade-right" data-aos-offset="120">
+            <div class=" user-select-none">
                 <h1 class="d-inline-block underline-small-b">jadwal pelajaran</span></h1>
             </div>
 
             <div class="jadwalFilter">
                 <ul class="p-0">
-                    <li class="list " data-filter="senin">Senin</li>
+                    <li class="list active" data-filter="Semua">Semua</li>
+                    <li class="list" data-filter="senin">Senin</li>
                     <li class="list" data-filter="selasa">Selasa</li>
                     <li class="list" data-filter="rabu">Rabu</li>
                     <li class="list" data-filter="kamis">Kamis</li>
@@ -376,9 +377,8 @@
 
             $('.list').click(function () {
                 const value = $(this).attr('data-filter');
-                if (value == 'senin') {
-                    $('.itemBox').not('.' + value).hide('1000');;
-                    $('.itemBox').filter('.' + value).show(1000);
+                if (value == 'Semua') {
+                    $('.itemBox').not('.' + value).hide('1000');
                 } else {
                     $('.itemBox').not('.' + value).hide('1000');;
                     $('.itemBox').filter('.' + value).show(1000);
