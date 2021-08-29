@@ -153,6 +153,10 @@ h1 {
 
 
 /* Icon */
+.bi-heart-fill {
+    font-size: 13px;
+}
+
 .bi-heart-fill:hover {
     color: #F43B86;
     transition-duration: 0.3s;
