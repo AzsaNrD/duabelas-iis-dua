@@ -122,7 +122,7 @@ table {
 
 .daftarHariTabel {
     display: flex;
-    flex-wrap: wrap;
+    flex-direction: column;
 }
 
 .table-jadwal table th {

@@ -159,7 +159,7 @@
 
             <div class="jadwalFilter">
                 <ul class="p-0">
-                    <li class="list active" data-filter="senin">Senin</li>
+                    <li class="list " data-filter="senin">Senin</li>
                     <li class="list" data-filter="selasa">Selasa</li>
                     <li class="list" data-filter="rabu">Rabu</li>
                     <li class="list" data-filter="kamis">Kamis</li>
@@ -383,6 +383,10 @@
                     $('.itemBox').not('.' + value).hide('1000');;
                     $('.itemBox').filter('.' + value).show(1000);
                 }
+            })
+
+            $('.list').click(function(){
+                $('this').addClass('active').siblings().removeClass('active');
             })
         })
     </script>
