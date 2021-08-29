@@ -93,11 +93,14 @@ h1 {
 
 .jadwalFilter ul li {
     color: #464343;
-    list-style: none;
     background: #F7F6F2;
+
     padding: 8px 20px;
     margin: 5px;
+
+    list-style: none;
     letter-spacing: 1px;
+
     border-radius: 8px;
     cursor: pointer;
 
@@ -105,11 +108,17 @@ h1 {
     box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
 }
 
+.jadwalFilter ul li:hover {
+    background-color: #F0E5CF;
+}
+
 .jadwalFilter ul li.active {
     background-color: #F0E5CF;
 }
 
-.table-jadwal table, th, td {
+.table-jadwal table,
+th,
+td {
     color: #464343;
     border-collapse: collapse;
     padding: 15px;
@@ -117,7 +126,7 @@ h1 {
 
 table {
     width: 600px;
-    margin: 5px;
+    margin-top: 20px;
 }
 
 .daftarHariTabel {
@@ -129,9 +138,11 @@ table {
     color: #1b1b1b;
     background-color: #F0E5CF;
 }
+
 .table-jadwal table tr {
     background-color: #F7F6F2;
 }
+
 .table-jadwal table tr:nth-child(odd) {
     background-color: #f1f1ee;
 }

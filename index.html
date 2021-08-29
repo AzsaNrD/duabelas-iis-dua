@@ -333,7 +333,7 @@
 
     <section id="agendaBdr" class="mx-auto pt-4">
         <div class="container">
-            <div class=" user-select-none" >
+            <div class=" user-select-none">
                 <h1 class="d-inline-block underline-small">agenda bdr</span></h1>
             </div>
 
@@ -383,11 +383,13 @@
                     $('.itemBox').not('.' + value).hide('1000');;
                     $('.itemBox').filter('.' + value).show(1000);
                 }
-            })
 
-            $('.list').click(function(){
                 $('this').addClass('active').siblings().removeClass('active');
             })
+
+            // $('.list').click(function () {
+            //     $('this').addClass('active').siblings().removeClass('active');
+            // })
         })
     </script>
 
