@@ -179,6 +179,16 @@ caption {
     text-decoration: underline;
 }
 
+/* tabel agenda */
+.tabel-agenda, th, td {
+    border-collapse: collapse;
+    border: 1px solid #1b1b1b;
+}
+
+.table-agenda table, th {
+    text-align: center;
+}
+
 
 /* Kalender */
 .kalender {
