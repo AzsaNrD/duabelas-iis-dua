@@ -183,19 +183,42 @@ table {
     text-decoration: underline;
 }
 
+.table-fixed {
+    table-layout: fixed;
+}
+
 /* tabel agenda */
 .tabel-agenda,
-th,
+tr,
 td {
+    color: #000000;
+    padding: 15px;
     border-collapse: collapse;
 }
 
 .border-tabel {
-    border: 1px solid #1b1b1b;
+    border: 1px solid #6b6b6b;
 }
-
 .bg-second {
     background-color: #F0E5CF;
+}
+
+.table-ag {
+    width: 600px;
+    margin-top: 20px;
+}
+
+.table-ag table th {
+    color: #ffffff;
+    background-color: #5089C6;
+}
+
+.table-ag table tr {
+    background-color: #cae3ff;
+}
+
+.table-ag table tr:nth-child(odd) {
+    background-color: #ddecfc;
 }
 
 
@@ -315,11 +338,20 @@ td {
         font-size: 16px;
     }
 
-    .table-fixed {
+    .table-fixed-w {
         table-layout: fixed;
     }
-    
-    .table-jadwal {
+
+    .table-jadwal,
+    .table-ag {
+        width: 100%;
+    }
+}
+
+/* Tablet */
+@media (min-width: 768px) {
+    .table-jadwal,
+    .table-ag {
         width: 100%;
     }
 }
