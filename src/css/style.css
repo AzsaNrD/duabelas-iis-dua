@@ -220,6 +220,8 @@ td {
 
 /* Button */
 .quizziz {
+    text-align: center;
+    width: 150px;
     margin-top: 1px !important;
     cursor: pointer;
     text-decoration: none;
@@ -235,6 +237,8 @@ td {
 }
 
 .zoom {
+    text-align: center;
+    width: 150px;
     margin-top: 1px !important;
     cursor: pointer;
     text-decoration: none;
@@ -250,6 +254,8 @@ td {
 }
 
 .youtube {
+    text-align: center;
+    width: 150px;
     margin-top: 1px !important;
     cursor: pointer;
     text-decoration: none;
@@ -265,6 +271,8 @@ td {
 }
 
 .sway {
+    text-align: center;
+    width: 150px;
     margin-top: 1px !important;
     cursor: pointer;
     text-decoration: none;
@@ -280,6 +288,8 @@ td {
 }
 
 .gform {
+    text-align: center;
+    width: 150px;
     margin-top: 1px !important;
     cursor: pointer;
     text-decoration: none;
