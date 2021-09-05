@@ -199,6 +199,7 @@ td {
 .border-tabel {
     border: 1px solid #6b6b6b;
 }
+
 .bg-second {
     background-color: #F0E5CF;
 }
@@ -214,12 +215,12 @@ td {
 }
 
 .table-ag table tr {
-    background-color: #cde4ff;
+    background-color: #e2f0ff;
 }
 
-.table-ag table tr:nth-child(odd) {
-    background-color: #ddecfc;
-}
+/* .table-ag table tr:nth-child(odd) {
+    background-color: #cde4ff;
+} */
 
 /* Button */
 .quizziz {
@@ -228,13 +229,75 @@ td {
     text-decoration: none;
     padding: 5px 10px;
     background: #A12568;
-    color: #F7F6F2;
+    color: #fff;
     border-radius: 5px;
 }
+
 .quizziz:hover {
     background: #b32c74;
-    color: #F7F6F2;
+    color: #fff;
 }
+
+.zoom {
+    margin-top: 1px !important;
+    cursor: pointer;
+    text-decoration: none;
+    padding: 5px 10px;
+    background: #39A2DB;
+    color: #fff;
+    border-radius: 5px;
+}
+
+.zoom:hover {
+    background: #2f95cc;
+    color: #fff;
+}
+
+.youtube {
+    margin-top: 1px !important;
+    cursor: pointer;
+    text-decoration: none;
+    padding: 5px 10px;
+    background: #d81818;
+    color: #fff;
+    border-radius: 5px;
+}
+
+.youtube:hover {
+    background: #be0a0a;
+    color: #fff;
+}
+
+.sway {
+    margin-top: 1px !important;
+    cursor: pointer;
+    text-decoration: none;
+    padding: 5px 10px;
+    background: #1EAE98;
+    color: #fff;
+    border-radius: 5px;
+}
+
+.sway:hover {
+    background: #179c88;
+    color: #fff;
+}
+
+.gform {
+    margin-top: 1px !important;
+    cursor: pointer;
+    text-decoration: none;
+    padding: 5px 10px;
+    background: #D62AD0;
+    color: #fff;
+    border-radius: 5px;
+}
+
+.gform:hover {
+    background: #bd21b7;
+    color: #fff;
+}
+
 /* Akhir Button */
 
 
@@ -393,12 +456,13 @@ td {
     }
 
     .notFound img {
-    width: 500px;
-}
+        width: 500px;
+    }
 }
 
 /* Tablet */
 @media (min-width: 768px) {
+
     .table-jadwal,
     .table-ag {
         width: 100%;
