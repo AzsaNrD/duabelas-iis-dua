@@ -221,6 +221,22 @@ td {
     background-color: #ddecfc;
 }
 
+/* Button */
+.quizziz {
+    margin-top: 1px !important;
+    cursor: pointer;
+    text-decoration: none;
+    padding: 5px 10px;
+    background: #A12568;
+    color: #F7F6F2;
+    border-radius: 5px;
+}
+.quizziz:hover {
+    background: #b32c74;
+    color: #F7F6F2;
+}
+/* Akhir Button */
+
 
 /* Kalender */
 .kalender {
@@ -311,6 +327,35 @@ td {
     font-size: 13px;
 }
 
+/* Tidak ditemukan */
+.notFound {
+    height: 100vh;
+}
+
+
+.notFound img {
+    width: 300px;
+}
+
+.notFound a {
+    text-decoration: none;
+    background-color: #5089C6;
+    color: #F7F6F2;
+    padding: 8px 20px;
+    border-radius: 3px;
+}
+
+.notFound a:hover {
+    background-color: #3c78b8;
+}
+
+.text-rubik {
+    font-family: 'Rubik', sans-serif;
+}
+
+.tombol-kembali {
+    margin-top: 30px;
+}
 
 
 /* DESKTOP */
@@ -346,6 +391,10 @@ td {
     .table-ag {
         width: 100%;
     }
+
+    .notFound img {
+    width: 500px;
+}
 }
 
 /* Tablet */
