@@ -83,7 +83,7 @@ var x = setInterval(function () {
 
 }, 1000);
 
-// ppkn
+// bInggris
 var countDatebInggris = new Date('September 12 2021 21:00:00').getTime();
 var x = setInterval(function () {
     var now = new Date().getTime();
@@ -123,10 +123,10 @@ var x = setInterval(function () {
 
 
 // pkwu
-var countDate = new Date('September 20 2021 24:00:00').getTime();
+var countDatePkwu = new Date('September 20 2021 24:00:00').getTime();
 var x = setInterval(function () {
     var now = new Date().getTime();
-    gap = countDate - now
+    gap = countDatePkwu - now
 
     var detik = 1000;
     var menit = detik * 60;
@@ -156,6 +156,82 @@ var x = setInterval(function () {
     if (gap < 0) {
         clearInterval(x);
         document.getElementById("pkwu").innerHTML = "Telah lewat tenggat waktu!";
+    }
+
+}, 1000);
+
+// sejindo
+var countDateSejindo = new Date('September 12 2021 24:00:00').getTime();
+var x = setInterval(function () {
+    var now = new Date().getTime();
+    gap = countDateSejindo - now
+
+    var detik = 1000;
+    var menit = detik * 60;
+    var jam = menit * 60;
+    var hari = jam * 24;
+
+    var h = Math.floor(gap / (hari));
+    var j = Math.floor((gap % (hari)) / (jam));
+    var m = Math.floor((gap % (jam)) / (menit));
+    var d = Math.floor((gap % (menit) / (detik)));
+
+    if (h < 10) {
+        h = "0" + h;
+    }
+    if (j < 10) {
+        j = "0" + j;
+    }
+    if (m < 10) {
+        m = "0" + m;
+    }
+    if (d < 10) {
+        d = "0" + d;
+    }
+
+    document.getElementById("sejindo").innerHTML = h + " Hari, " + j + " Jam, " + m + " Menit, " + d + " Detik.";
+
+    if (gap < 0) {
+        clearInterval(x);
+        document.getElementById("sejindo").innerHTML = "Telah lewat tenggat waktu!";
+    }
+
+}, 1000);
+
+// sejindo
+var countDateSejindo = new Date('September 12 2021 24:00:00').getTime();
+var x = setInterval(function () {
+    var now = new Date().getTime();
+    gap = countDateSejindo - now
+
+    var detik = 1000;
+    var menit = detik * 60;
+    var jam = menit * 60;
+    var hari = jam * 24;
+
+    var h = Math.floor(gap / (hari));
+    var j = Math.floor((gap % (hari)) / (jam));
+    var m = Math.floor((gap % (jam)) / (menit));
+    var d = Math.floor((gap % (menit) / (detik)));
+
+    if (h < 10) {
+        h = "0" + h;
+    }
+    if (j < 10) {
+        j = "0" + j;
+    }
+    if (m < 10) {
+        m = "0" + m;
+    }
+    if (d < 10) {
+        d = "0" + d;
+    }
+
+    document.getElementById("sejindo").innerHTML = h + " Hari, " + j + " Jam, " + m + " Menit, " + d + " Detik.";
+
+    if (gap < 0) {
+        clearInterval(x);
+        document.getElementById("sejindo").innerHTML = "Telah lewat tenggat waktu!";
     }
 
 }, 1000);
