@@ -189,11 +189,11 @@ var x = setInterval(function () {
         d = "0" + d;
     }
 
-    document.getElementById("sejindo").innerHTML = h + " Hari, " + j + " Jam, " + m + " Menit, " + d + " Detik.";
+    document.getElementById("pkn").innerHTML = h + " Hari, " + j + " Jam, " + m + " Menit, " + d + " Detik.";
 
     if (gap < 0) {
         clearInterval(x);
-        document.getElementById("sejindo").innerHTML = "Telah lewat tenggat waktu!";
+        document.getElementById("pkn").innerHTML = "Telah lewat tenggat waktu!";
     }
 
 }, 1000);
