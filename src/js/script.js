@@ -36,28 +36,33 @@ var clock = setInterval(
         }
 
         if (hr >= 3) {
-            document.getElementById("waktu").innerHTML = "Selamat Pagi 🌼. . .";
+            document.getElementById("waktu").innerHTML = "Selamat Pagi. . .";
+            document.getElementById("absent").style.display = "none";
         }
 
         if (hr >= 6) {
             document.getElementById("waktu").innerHTML = "Selamat Pagi, jangan lupa absen✨";
-            document.getElementById("absent").style.display = "inline";
+            document.getElementById("absent").style.display = "";
         }
 
         if (hr >= 8) {
-            document.getElementById("waktu").innerHTML = "Selamat Pagi 🌻. . .";
+            document.getElementById("waktu").innerHTML = "Selamat Pagi . . .";
+            document.getElementById("absent").style.display = "none";
         }
 
         if (hr >= 11) {
-            document.getElementById("waktu").innerHTML = "Selamat Siang 🌤︎. . .";
+            document.getElementById("waktu").innerHTML = "Selamat Siang. . .";
+            document.getElementById("absent").style.display = "none";
         }
 
         if (hr >= 15) {
-            document.getElementById("waktu").innerHTML = "Selamat Sore 🍃. . .";
+            document.getElementById("waktu").innerHTML = "Selamat Sore. . .";
+            document.getElementById("absent").style.display = "none";
         }
 
         if (hr >= 19) {
-            document.getElementById("waktu").innerHTML = "Selamat Malam 🌠. . .";
+            document.getElementById("waktu").innerHTML = "Selamat Malam. . .";
+            document.getElementById("absent").style.display = "none";
         }
 
 

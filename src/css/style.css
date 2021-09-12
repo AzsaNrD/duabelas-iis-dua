@@ -322,7 +322,7 @@ td {
 }
 
 .absen {
-    display: none;
+    display: inline;
     text-align: center;
     width: 150px;
     margin-top: 1px !important;
