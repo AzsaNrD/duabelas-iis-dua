@@ -287,6 +287,23 @@ td {
     color: #fff;
 }
 
+.gdrive {
+    text-align: center;
+    width: 150px;
+    margin-top: 1px !important;
+    cursor: pointer;
+    text-decoration: none;
+    padding: 5px 10px;
+    background: #22b866;
+    color: #fff;
+    border-radius: 5px;
+}
+
+.gdrive:hover {
+    background: #1a9c55;
+    color: #fff;
+}
+
 .gform {
     text-align: center;
     width: 150px;
