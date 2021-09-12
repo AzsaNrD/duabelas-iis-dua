@@ -35,6 +35,31 @@ var clock = setInterval(
             sec = "0" + sec;
         }
 
+        if (hr >= 3) {
+            document.getElementById("waktu").innerHTML = "Selamat Pagi 🌼. . .";
+        }
+
+        if (hr >= 6) {
+            document.getElementById("waktu").innerHTML = "Selamat Pagi, jangan lupa absen✨";
+            document.getElementById("absent").style.display = "inline";
+        }
+
+        if (hr >= 8) {
+            document.getElementById("waktu").innerHTML = "Selamat Pagi 🌻. . .";
+        }
+
+        if (hr >= 11) {
+            document.getElementById("waktu").innerHTML = "Selamat Siang 🌤︎. . .";
+        }
+
+        if (hr >= 15) {
+            document.getElementById("waktu").innerHTML = "Selamat Sore 🍃. . .";
+        }
+
+        if (hr >= 19) {
+            document.getElementById("waktu").innerHTML = "Selamat Malam 🌠. . .";
+        }
+
 
         hour.textContent = hr;
         minute.textContent = min;
@@ -206,13 +231,13 @@ const filterBox = document.querySelectorAll('.itemBox');
 
 window.onload = () => {
     filterItem.onclick = (selectedItem) => {
-        if(selectedItem.target.classList.contains("list")){
+        if (selectedItem.target.classList.contains("list")) {
             filterItem.querySelector(".active").classList.remove("active");
             selectedItem.target.classList.add("active");
             let filterName = selectedItem.target.getAttribute("data-name");
-            filterBox.forEach((itemBox)=>{
+            filterBox.forEach((itemBox) => {
                 let filterJadwal = itemBox.getAttribute("data-name");
-                if((filterJadwal == filterName) || filterName == "semua") {
+                if ((filterJadwal == filterName) || filterName == "semua") {
                     itemBox.classList.add("show");
                 } else {
                     itemBox.classList.add("hide");

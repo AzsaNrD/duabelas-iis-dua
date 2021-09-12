@@ -321,6 +321,24 @@ td {
     color: #fff;
 }
 
+.absen {
+    display: none;
+    text-align: center;
+    width: 150px;
+    margin-top: 1px !important;
+    cursor: pointer;
+    text-decoration: none;
+    padding: 8px 15px;
+    background: #F7F6F2;
+    color: #1b1b1b;
+    border-radius: 5px;
+}
+
+.absen:hover {
+    background: #e7e7e7;
+    color: #1b1b1b;
+}
+
 /* Akhir Button */
 
 
