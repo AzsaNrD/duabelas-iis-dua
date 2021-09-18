@@ -116,6 +116,14 @@ h1 {
     background-color: #F0E5CF;
 }
 
+.tracking-wider {
+    letter-spacing: 0.05em;
+}
+
+.biru-dua {
+    background-color: #9adcff !important;
+}
+
 .itemBox.hide {
     display: none;
 }
