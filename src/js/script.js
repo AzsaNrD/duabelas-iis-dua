@@ -62,7 +62,7 @@ var clock = setInterval(
         
         if (hr >= 19) {
             document.getElementById("waktu").innerHTML = "Selamat Malam";
-            document.getElementById("absent").style.display = "none";
+            document.getElementById("absent").style.display = "";
         }
 
         if (week[dname] = 6) {
