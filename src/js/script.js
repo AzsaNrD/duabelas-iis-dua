@@ -33,35 +33,32 @@ var clock = setInterval(
 
         if (sec < 10) {
             sec = "0" + sec;
-        }
-
+        } 
+        
         if (hr >= 3) {
             document.getElementById("waktu").innerHTML = "Selamat Pagi. . .";
             document.getElementById("absent").style.display = "none";
-        }
-
-        if (hr >= 6) {
+        } else if (hr >= 6) {
             document.getElementById("waktu").innerHTML = "Selamat Pagi, jangan lupa absen✨";
             document.getElementById("absent").style.display = "";
-        }
-
-        if (hr >= 8) {
+        } else if (hr >= 8) {
             document.getElementById("waktu").innerHTML = "Selamat Pagi . . .";
             document.getElementById("absent").style.display = "none";
-        }
-
-        if (hr >= 11) {
+        } else if (hr >= 11) {
             document.getElementById("waktu").innerHTML = "Selamat Siang. . .";
             document.getElementById("absent").style.display = "none";
-        }
-
-        if (hr >= 15) {
+        } else if (hr >= 15) {
             document.getElementById("waktu").innerHTML = "Selamat Sore. . .";
+            document.getElementById("absent").style.display = "none";
+        } else if (hr >= 19) {
+            document.getElementById("waktu").innerHTML = "Selamat Malam. . .";
             document.getElementById("absent").style.display = "none";
         }
 
-        if (hr >= 19) {
-            document.getElementById("waktu").innerHTML = "Selamat Malam. . .";
+        if (week[dname] = 6) {
+            document.getElementById("absent").style.display = "none";
+        }
+        if (week[dname] = 0) {
             document.getElementById("absent").style.display = "none";
         }
 
