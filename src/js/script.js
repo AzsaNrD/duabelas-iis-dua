@@ -38,19 +38,29 @@ var clock = setInterval(
         if (hr >= 3) {
             document.getElementById("waktu").innerHTML = "Selamat Pagi. . .";
             document.getElementById("absent").style.display = "none";
-        } else if (hr >= 6) {
+        }
+        
+        if (hr >= 6) {
             document.getElementById("waktu").innerHTML = "Selamat Pagi, jangan lupa absen✨";
             document.getElementById("absent").style.display = "";
-        } else if (hr >= 8) {
+        }
+        
+        if (hr >= 8) {
             document.getElementById("waktu").innerHTML = "Selamat Pagi . . .";
             document.getElementById("absent").style.display = "none";
-        } else if (hr >= 11) {
+        }
+        
+        if (hr >= 11) {
             document.getElementById("waktu").innerHTML = "Selamat Siang. . .";
             document.getElementById("absent").style.display = "none";
-        } else if (hr >= 15) {
+        }
+        
+        if (hr >= 15) {
             document.getElementById("waktu").innerHTML = "Selamat Sore. . .";
             document.getElementById("absent").style.display = "none";
-        } else if (hr >= 19) {
+        }
+        
+        if (hr >= 19) {
             document.getElementById("waktu").innerHTML = "Selamat Malam. . .";
             document.getElementById("absent").style.display = "none";
         }
