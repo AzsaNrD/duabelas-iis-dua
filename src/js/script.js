@@ -64,12 +64,16 @@ var clock = setInterval(
             document.getElementById("absent").style.display = "";
         }
 
-        if (week[dname] = 6) {
+        if (week[dname] = 6 ) {
             document.getElementById("absent").style.display = "none";
         }
         if (week[dname] = 0) {
             document.getElementById("absent").style.display = "none";
         }
+        else {
+            document.getElementById("absent").style.display = "";
+        }
+        
 
 
         hour.textContent = hr;
