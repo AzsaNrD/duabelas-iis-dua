@@ -54,11 +54,6 @@ var clock = setInterval(
             document.getElementById("absent").style.display = "";
         }
         
-        if (hr >= 8) {
-            document.getElementById("waktu").innerHTML = "Selamat Pagi ";
-            document.getElementById("absent").style.display = "none";
-        }
-        
         if (hr >= 11) {
             document.getElementById("waktu").innerHTML = "Selamat Siang";
             document.getElementById("absent").style.display = "none";
