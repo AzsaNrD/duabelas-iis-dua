@@ -33,8 +33,18 @@ var clock = setInterval(
 
         if (sec < 10) {
             sec = "0" + sec;
-        } 
-        
+        }
+
+        if (week[dname] = 6 ) {
+            document.getElementById("absent").style.display = "none";
+        }
+        if (week[dname] = 0) {
+            document.getElementById("absent").style.display = "none";
+        }
+        else {
+            document.getElementById("absent").style.display = "";
+        }
+
         if (hr >= 3) {
             document.getElementById("waktu").innerHTML = "Selamat Pagi";
             document.getElementById("absent").style.display = "none";
@@ -61,16 +71,6 @@ var clock = setInterval(
         
         if (hr >= 19) {
             document.getElementById("waktu").innerHTML = "Selamat Malam";
-            document.getElementById("absent").style.display = "";
-        }
-
-        if (week[dname] = 6 ) {
-            document.getElementById("absent").style.display = "none";
-        }
-        if (week[dname] = 0) {
-            document.getElementById("absent").style.display = "none";
-        }
-        else {
             document.getElementById("absent").style.display = "";
         }
         
