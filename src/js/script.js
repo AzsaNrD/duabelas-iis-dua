@@ -87,7 +87,7 @@ var clock = setInterval(
 
 // pkwu
 var countDatePkwu = new Date('September 20 2021 24:00:00').getTime();
-var x = setInterval(function () {
+var a = setInterval(function () {
     var now = new Date().getTime();
     gap = countDatePkwu - now
 
@@ -117,7 +117,7 @@ var x = setInterval(function () {
     document.getElementById("pkwu").innerHTML = h + " Hari, " + j + " Jam, " + m + " Menit, " + d + " Detik.";
 
     if (gap < 0) {
-        clearInterval(x);
+        clearInterval(a);
         document.getElementById("pkwu").innerHTML = "Telah lewat tenggat waktu!";
     }
 
@@ -125,7 +125,7 @@ var x = setInterval(function () {
 
 // geografi
 var countDateGeo = new Date('September 26 2021 24:00:00').getTime();
-var x = setInterval(function () {
+var b = setInterval(function () {
     var now = new Date().getTime();
     gap = countDateGeo - now
 
@@ -193,7 +193,7 @@ var x = setInterval(function () {
     document.getElementById("senbud").innerHTML = h + " Hari, " + j + " Jam, " + m + " Menit, " + d + " Detik.";
 
     if (gap < 0) {
-        clearInterval(x);
+        clearInterval(b);
         document.getElementById("senbud").innerHTML = "Telah lewat tenggat waktu!";
     }
 
