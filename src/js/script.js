@@ -119,7 +119,7 @@ var a = setInterval(function () {
 }, 1000);
 
 // geografi
-var countDateGeo = new Date('September 26 2021 24:00:00').getTime();
+var countDateGeo = new Date('September 26 2021 28:00:00').getTime();
 var b = setInterval(function () {
     var now = new Date().getTime();
     gap = countDateGeo - now
