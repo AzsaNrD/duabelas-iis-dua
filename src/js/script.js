@@ -35,13 +35,12 @@ var clock = setInterval(
             sec = "0" + sec;
         }
 
-        if (week[dname] = 6 ) {
+        if (week[dname] = 'Sabtu' ) {
             document.getElementById("absent").style.display = "none";
         }
-        if (week[dname] = 0) {
+        if (week[dname] = 'Minggu') {
             document.getElementById("absent").style.display = "none";
-        }
-        else {
+        } else {
             document.getElementById("absent").style.display = "";
         }
 
