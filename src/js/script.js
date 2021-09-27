@@ -11,6 +11,17 @@ var ids = ["nBulan", "nHari", "hTanggal", "tahun"];
 var values = [months[mo], week[dname], dnum, yr];
 for (var i = 0; i < ids.length; i++) document.getElementById(ids[i]).firstChild.nodeValue = values[i];
 
+
+if (week[dname] == 'Sabtu') {
+    document.getElementById("absent").style.display = "none";
+}
+if (week[dname] == 'Minggu') {
+    document.getElementById("absent").style.display = "none";
+} else {
+    document.getElementById("absent").style.display = "";
+}
+console.log('Sekarang hari ' + week[dname]);
+
 // Jam
 var hour = document.getElementById("jam");
 var minute = document.getElementById("menit");
@@ -35,41 +46,33 @@ var clock = setInterval(
             sec = "0" + sec;
         }
 
-        if (week[dname] = 'Sabtu' ) {
-            document.getElementById("absent").style.display = "none";
-        }
-        if (week[dname] = 'Minggu') {
-            document.getElementById("absent").style.display = "none";
-        } else {
-            document.getElementById("absent").style.display = "";
-        }
-
         if (hr >= 3) {
             document.getElementById("waktu").innerHTML = "Selamat Pagi";
             document.getElementById("absent").style.display = "none";
         }
-        
+
         if (hr >= 6) {
             document.getElementById("absent").style.display = "";
         }
-        
+
         if (hr >= 11) {
             document.getElementById("waktu").innerHTML = "Selamat Siang";
             document.getElementById("absent").style.display = "none";
         }
-        
+
         if (hr >= 15) {
             document.getElementById("waktu").innerHTML = "Selamat Sore";
             document.getElementById("absent").style.display = "none";
         }
-        
+
         if (hr >= 19) {
             document.getElementById("waktu").innerHTML = "Selamat Malam";
-            document.getElementById("absent").style.display = "";
+            document.getElementById("absent").style.display = "none";
         }
+
+
+        console.log(`Jam ${hr}:${min}`);
         
-
-
         hour.textContent = hr;
         minute.textContent = min;
         seconds.textContent = sec;
