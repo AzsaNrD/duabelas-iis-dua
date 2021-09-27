@@ -70,9 +70,6 @@ var clock = setInterval(
             document.getElementById("absent").style.display = "none";
         }
 
-
-        console.log(`Jam ${hr}:${min}`);
-        
         hour.textContent = hr;
         minute.textContent = min;
         seconds.textContent = sec;
