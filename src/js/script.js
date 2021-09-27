@@ -80,7 +80,7 @@ var clock = setInterval(
 // Deadline
 
 // pkwu
-var countDatePkwu = new Date('September 20 2021 24:00:00').getTime();
+var countDatePkwu = new Date('September 29 2021 24:00:00').getTime();
 var a = setInterval(function () {
     var now = new Date().getTime();
     gap = countDatePkwu - now
@@ -118,7 +118,7 @@ var a = setInterval(function () {
 }, 1000);
 
 // geografi
-var countDateGeo = new Date('September 30 2021 24:00:00').getTime();
+var countDateGeo = new Date('September 28 2021 12:00:00').getTime();
 var b = setInterval(function () {
     var now = new Date().getTime();
     gap = countDateGeo - now
