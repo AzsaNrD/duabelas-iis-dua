@@ -170,15 +170,15 @@ var b = setInterval(function () {
     }
 
     if (gap < 0) {
-        clearInterval(x);
+        clearInterval(b);
         document.getElementById("geografi").innerHTML = "Telah lewat tenggat waktu!";
     }
 
 }, 1000);
 
-// geografi
+// senbud
 var countDateSenbud = new Date('October 01 2021 24:00:00').getTime();
-var x = setInterval(function () {
+var e = setInterval(function () {
     var now = new Date().getTime();
     gap = countDateSenbud - now
 
@@ -218,7 +218,7 @@ var x = setInterval(function () {
     }
 
     if (gap < 0) {
-        clearInterval(b);
+        clearInterval(e);
         document.getElementById("senbud").innerHTML = "Telah lewat tenggat waktu!";
     }
 
