@@ -177,7 +177,7 @@ var b = setInterval(function () {
 }, 1000);
 
 // senbud
-var countDateSenbud = new Date('October 01 2021 24:00:00').getTime();
+var countDateSenbud = new Date('October 03 2021 24:00:00').getTime();
 var e = setInterval(function () {
     var now = new Date().getTime();
     gap = countDateSenbud - now
