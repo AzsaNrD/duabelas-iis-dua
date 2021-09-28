@@ -121,9 +121,8 @@ var a = setInterval(function () {
     }
     if (m <= 30) {
         document.getElementById("pkwu").style.color = "#FD8C04";
-    } else {
-        document.getElementById("pkwu").style.color = "#150050";
-    }
+    } 
+    
     if (m <= 0) {
         document.getElementById("pkwu").innerHTML = d + " Detik.";
     }
@@ -176,8 +175,6 @@ var b = setInterval(function () {
     }
     if (m <= 30) {
         document.getElementById("geografi").style.color = "#FD8C04";
-    } else {
-        document.getElementById("geografi").style.color = "#150050";
     }
     if (m <= 0) {
         document.getElementById("geografi").innerHTML = d + " Detik.";
@@ -192,7 +189,7 @@ var b = setInterval(function () {
 }, 1000);
 
 // senbud
-var countDateSenbud = new Date('October 03 2021 24:00:00').getTime();
+var countDateSenbud = new Date('October 04 2021 24:00:00').getTime();
 var e = setInterval(function () {
     var now = new Date().getTime();
     gap = countDateSenbud - now
@@ -230,8 +227,6 @@ var e = setInterval(function () {
     }
     if (m <= 30) {
         document.getElementById("senbud").style.color = "#FD8C04";
-    } else {
-        document.getElementById("senbud").style.color = "#150050";
     }
     if (m <= 0) {
         document.getElementById("senbud").innerHTML = d + " Detik.";
