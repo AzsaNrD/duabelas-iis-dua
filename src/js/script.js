@@ -55,6 +55,9 @@ var clock = setInterval(
             document.getElementById("absent").style.display = "";
         }
 
+        if (hr >= 8) {
+            document.getElementById("absent").style.display = "none";
+        }
         if (hr >= 11) {
             document.getElementById("waktu").innerHTML = "Selamat Siang";
             document.getElementById("absent").style.display = "none";
@@ -116,6 +119,11 @@ var a = setInterval(function () {
     if (j <= 0) {
         document.getElementById("pkwu").innerHTML = m + " Menit, " + d + " Detik.";
     }
+    if (m <= 30) {
+        document.getElementById("pkwu").style.color = "#FD8C04";
+    } else {
+        document.getElementById("pkwu").style.color = "#150050";
+    }
     if (m <= 0) {
         document.getElementById("pkwu").innerHTML = d + " Detik.";
     }
@@ -123,6 +131,7 @@ var a = setInterval(function () {
     if (gap < 0) {
         clearInterval(a);
         document.getElementById("pkwu").innerHTML = "Telah lewat tenggat waktu!";
+        document.getElementById("pkwu").style.color = "#FF0000";
     }
 
 }, 1000);
@@ -165,6 +174,11 @@ var b = setInterval(function () {
     if (j <= 0) {
         document.getElementById("geografi").innerHTML = m + " Menit, " + d + " Detik.";
     }
+    if (m <= 30) {
+        document.getElementById("geografi").style.color = "#FD8C04";
+    } else {
+        document.getElementById("geografi").style.color = "#150050";
+    }
     if (m <= 0) {
         document.getElementById("geografi").innerHTML = d + " Detik.";
     }
@@ -172,6 +186,7 @@ var b = setInterval(function () {
     if (gap < 0) {
         clearInterval(b);
         document.getElementById("geografi").innerHTML = "Telah lewat tenggat waktu!";
+        document.getElementById("geografi").style.color = "#FF0000";
     }
 
 }, 1000);
@@ -213,6 +228,11 @@ var e = setInterval(function () {
     if (j <= 0) {
         document.getElementById("senbud").innerHTML = m + " Menit, " + d + " Detik.";
     }
+    if (m <= 30) {
+        document.getElementById("senbud").style.color = "#FD8C04";
+    } else {
+        document.getElementById("senbud").style.color = "#150050";
+    }
     if (m <= 0) {
         document.getElementById("senbud").innerHTML = d + " Detik.";
     }
@@ -220,6 +240,7 @@ var e = setInterval(function () {
     if (gap < 0) {
         clearInterval(e);
         document.getElementById("senbud").innerHTML = "Telah lewat tenggat waktu!";
+        document.getElementById("senbud").style.color = "#FF0000";
     }
 
 }, 1000);
