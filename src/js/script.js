@@ -110,6 +110,16 @@ var a = setInterval(function () {
 
     document.getElementById("pkwu").innerHTML = h + " Hari, " + j + " Jam, " + m + " Menit, " + d + " Detik.";
 
+    if (h <= 0) {
+        document.getElementById("pkwu").innerHTML = j + " Jam, " + m + " Menit, " + d + " Detik.";
+    }
+    if (j <= 0) {
+        document.getElementById("pkwu").innerHTML = m + " Menit, " + d + " Detik.";
+    }
+    if (m <= 0) {
+        document.getElementById("pkwu").innerHTML = d + " Detik.";
+    }
+
     if (gap < 0) {
         clearInterval(a);
         document.getElementById("pkwu").innerHTML = "Telah lewat tenggat waktu!";
@@ -146,7 +156,18 @@ var b = setInterval(function () {
         d = "0" + d;
     }
 
+
     document.getElementById("geografi").innerHTML = h + " Hari, " + j + " Jam, " + m + " Menit, " + d + " Detik.";
+
+    if (h <= 0) {
+        document.getElementById("geografi").innerHTML = j + " Jam, " + m + " Menit, " + d + " Detik.";
+    }
+    if (j <= 0) {
+        document.getElementById("geografi").innerHTML = m + " Menit, " + d + " Detik.";
+    }
+    if (m <= 0) {
+        document.getElementById("geografi").innerHTML = d + " Detik.";
+    }
 
     if (gap < 0) {
         clearInterval(x);
@@ -185,6 +206,16 @@ var x = setInterval(function () {
     }
 
     document.getElementById("senbud").innerHTML = h + " Hari, " + j + " Jam, " + m + " Menit, " + d + " Detik.";
+
+    if (h <= 0) {
+        document.getElementById("senbud").innerHTML = j + " Jam, " + m + " Menit, " + d + " Detik.";
+    }
+    if (j <= 0) {
+        document.getElementById("senbud").innerHTML = m + " Menit, " + d + " Detik.";
+    }
+    if (m <= 0) {
+        document.getElementById("senbud").innerHTML = d + " Detik.";
+    }
 
     if (gap < 0) {
         clearInterval(b);
