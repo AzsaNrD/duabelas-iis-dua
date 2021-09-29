@@ -83,7 +83,7 @@ var clock = setInterval(
 // Deadline
 
 // pkwu
-var countDatePkwu = new Date('September 29 2021 24:00:00').getTime();
+var countDatePkwu = new Date('September 29 2021 22:00:00').getTime();
 var a = setInterval(function () {
     var now = new Date().getTime();
     gap = countDatePkwu - now
