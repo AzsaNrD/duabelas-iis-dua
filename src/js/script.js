@@ -118,10 +118,8 @@ var a = setInterval(function () {
     }
     if (j <= 0) {
         document.getElementById("pkwu").innerHTML = m + " Menit, " + d + " Detik.";
-    }
-    if (m <= 30) {
         document.getElementById("pkwu").style.color = "#FD8C04";
-    } 
+    }
     
     if (m <= 0) {
         document.getElementById("pkwu").innerHTML = d + " Detik.";
@@ -172,9 +170,7 @@ var b = setInterval(function () {
     }
     if (j <= 0) {
         document.getElementById("geografi").innerHTML = m + " Menit, " + d + " Detik.";
-    }
-    if (m <= 30) {
-        document.getElementById("geografi").style.color = "#FD8C04";
+        document.getElementById("pkwu").style.color = "#FD8C04";
     }
     if (m <= 0) {
         document.getElementById("geografi").innerHTML = d + " Detik.";
@@ -224,9 +220,7 @@ var e = setInterval(function () {
     }
     if (j <= 0) {
         document.getElementById("senbud").innerHTML = m + " Menit, " + d + " Detik.";
-    }
-    if (m <= 30) {
-        document.getElementById("senbud").style.color = "#FD8C04";
+        document.getElementById("pkwu").style.color = "#FD8C04";
     }
     if (m <= 0) {
         document.getElementById("senbud").innerHTML = d + " Detik.";
