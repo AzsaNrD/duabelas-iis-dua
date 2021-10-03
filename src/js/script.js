@@ -12,14 +12,14 @@ var values = [months[mo], week[dname], dnum, yr];
 for (var i = 0; i < ids.length; i++) document.getElementById(ids[i]).firstChild.nodeValue = values[i];
 
 
-if (week[dname] == 'Sabtu') {
-    document.getElementById("absent").style.display = "none";
-}
-if (week[dname] == 'Minggu') {
-    document.getElementById("absent").style.display = "none";
-} else {
-    document.getElementById("absent").style.display = "";
-}
+// if (week[dname] == 'Sabtu') {
+//     document.getElementById("absent").style.display = "none";
+// }
+// if (week[dname] == 'Minggu') {
+//     document.getElementById("absent").style.display = "none";
+// } else {
+//     document.getElementById("absent").style.display = "";
+// }
 console.log('Sekarang hari ' + week[dname]);
 
 // Jam
@@ -73,6 +73,16 @@ var clock = setInterval(
             document.getElementById("absent").style.display = "none";
         }
 
+        if (week[dname] == 'Sabtu') {
+            document.getElementById("absent").style.display = "none";
+        }
+        if (week[dname] == 'Minggu') {
+            document.getElementById("absent").style.display = "none";
+        } else {
+            document.getElementById("absent").style.display = "";
+        }
+        
+
         hour.textContent = hr;
         minute.textContent = min;
         seconds.textContent = sec;
@@ -120,7 +130,7 @@ var a = setInterval(function () {
         document.getElementById("pkwu").innerHTML = m + " Menit, " + d + " Detik.";
         document.getElementById("pkwu").style.color = "#FD8C04";
     }
-    
+
     if (m <= 0) {
         document.getElementById("pkwu").innerHTML = d + " Detik.";
     }
