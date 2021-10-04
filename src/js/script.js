@@ -46,42 +46,105 @@ var clock = setInterval(
             sec = "0" + sec;
         }
 
-        if (hr >= 3) {
-            document.getElementById("waktu").innerHTML = "Selamat Pagi";
-            document.getElementById("absent").style.display = "none";
-        }
+        // if (hr >= 3) {
+        //     document.getElementById("waktu").innerHTML = "Selamat Pagi";
+        //     document.getElementById("absent").style.display = "none";
+        // }
 
-        if (hr >= 6) {
-            document.getElementById("absent").style.display = "";
-        }
+        // if (hr >= 6) {
+        //     document.getElementById("absent").style.display = "";
+        // }
 
-        if (hr >= 8) {
-            document.getElementById("absent").style.display = "none";
-        }
-        if (hr >= 11) {
-            document.getElementById("waktu").innerHTML = "Selamat Siang";
-            document.getElementById("absent").style.display = "none";
-        }
+        // if (hr >= 8) {
+        //     document.getElementById("absent").style.display = "none";
+        // }
+        // if (hr >= 11) {
+        //     document.getElementById("waktu").innerHTML = "Selamat Siang";
+        //     document.getElementById("absent").style.display = "none";
+        // }
 
-        if (hr >= 15) {
-            document.getElementById("waktu").innerHTML = "Selamat Sore";
-            document.getElementById("absent").style.display = "none";
-        }
+        // if (hr >= 15) {
+        //     document.getElementById("waktu").innerHTML = "Selamat Sore";
+        //     document.getElementById("absent").style.display = "none";
+        // }
 
-        if (hr >= 19) {
-            document.getElementById("waktu").innerHTML = "Selamat Malam";
-            document.getElementById("absent").style.display = "none";
-        }
+        // if (hr >= 19) {
+        //     document.getElementById("waktu").innerHTML = "Selamat Malam";
+        //     document.getElementById("absent").style.display = "none";
+        // }
 
         if (week[dname] == 'Sabtu') {
             document.getElementById("absent").style.display = "none";
+
+            if (hr >= 3) {
+                document.getElementById("waktu").innerHTML = "Selamat Pagi";
+                document.getElementById("absent").style.display = "none";
+            }
+            
+            if (hr >= 11) {
+                document.getElementById("waktu").innerHTML = "Selamat Siang";
+            }
+
+            if (hr >= 15) {
+                document.getElementById("waktu").innerHTML = "Selamat Sore";
+            }
+
+            if (hr >= 19) {
+                document.getElementById("waktu").innerHTML = "Selamat Malam";
+            }
         }
-        if (week[dname] == 'Minggu') {
+        if (week[dname] == 'Senin') {
             document.getElementById("absent").style.display = "none";
+
+            if (hr >= 3) {
+                document.getElementById("waktu").innerHTML = "Selamat Pagi";
+                document.getElementById("absent").style.display = "none";
+            }
+            
+            if (hr >= 11) {
+                document.getElementById("waktu").innerHTML = "Selamat Siang";
+            }
+
+            if (hr >= 15) {
+                document.getElementById("waktu").innerHTML = "Selamat Sore";
+            }
+
+            if (hr >= 19) {
+                document.getElementById("waktu").innerHTML = "Selamat Malam";
+            }
+
         } else {
             document.getElementById("absent").style.display = "";
+
+            if (hr >= 3) {
+                document.getElementById("waktu").innerHTML = "Selamat Pagi";
+                document.getElementById("absent").style.display = "none";
+            }
+
+            if (hr >= 6) {
+                document.getElementById("absent").style.display = "";
+            }
+
+            if (hr >= 8) {
+                document.getElementById("absent").style.display = "none";
+            }
+
+            if (hr >= 11) {
+                document.getElementById("waktu").innerHTML = "Selamat Siang";
+                document.getElementById("absent").style.display = "none";
+            }
+
+            if (hr >= 15) {
+                document.getElementById("waktu").innerHTML = "Selamat Sore";
+                document.getElementById("absent").style.display = "none";
+            }
+
+            if (hr >= 19) {
+                document.getElementById("waktu").innerHTML = "Selamat Malam";
+                document.getElementById("absent").style.display = "none";
+            }
         }
-        
+
 
         hour.textContent = hr;
         minute.textContent = min;
