@@ -93,7 +93,7 @@ var clock = setInterval(
                 document.getElementById("waktu").innerHTML = "Selamat Malam";
             }
         }
-        if (week[dname] == 'Senin') {
+        if (week[dname] == 'Minggu') {
             document.getElementById("absent").style.display = "none";
 
             if (hr >= 3) {
