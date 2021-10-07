@@ -155,11 +155,11 @@ var clock = setInterval(
 
 // Deadline
 
-// pkwu
-var countDatePkwu = new Date('September 29 2021 22:00:00').getTime();
+// sejindo
+var countDateSejindo = new Date('October 09 2021 12:00:00').getTime();
 var a = setInterval(function () {
     var now = new Date().getTime();
-    gap = countDatePkwu - now
+    gap = countDateSejindo - now
 
     var detik = 1000;
     var menit = detik * 60;
@@ -184,125 +184,24 @@ var a = setInterval(function () {
         d = "0" + d;
     }
 
-    document.getElementById("pkwu").innerHTML = h + " Hari, " + j + " Jam, " + m + " Menit, " + d + " Detik.";
+    document.getElementById("sejindo").innerHTML = h + " Hari, " + j + " Jam, " + m + " Menit, " + d + " Detik.";
 
     if (h <= 0) {
-        document.getElementById("pkwu").innerHTML = j + " Jam, " + m + " Menit, " + d + " Detik.";
+        document.getElementById("sejindo").innerHTML = j + " Jam, " + m + " Menit, " + d + " Detik.";
     }
     if (j <= 0) {
-        document.getElementById("pkwu").innerHTML = m + " Menit, " + d + " Detik.";
-        document.getElementById("pkwu").style.color = "#FD8C04";
+        document.getElementById("sejindo").innerHTML = m + " Menit, " + d + " Detik.";
+        document.getElementById("sejindo").style.color = "#FD8C04";
     }
 
     if (m <= 0) {
-        document.getElementById("pkwu").innerHTML = d + " Detik.";
+        document.getElementById("sejindo").innerHTML = d + " Detik.";
     }
 
     if (gap < 0) {
         clearInterval(a);
-        document.getElementById("pkwu").innerHTML = "Telah lewat tenggat waktu!";
-        document.getElementById("pkwu").style.color = "#FF0000";
-    }
-
-}, 1000);
-
-// geografi
-var countDateGeo = new Date('September 28 2021 12:00:00').getTime();
-var b = setInterval(function () {
-    var now = new Date().getTime();
-    gap = countDateGeo - now
-
-    var detik = 1000;
-    var menit = detik * 60;
-    var jam = menit * 60;
-    var hari = jam * 24;
-
-    var h = Math.floor(gap / (hari));
-    var j = Math.floor((gap % (hari)) / (jam));
-    var m = Math.floor((gap % (jam)) / (menit));
-    var d = Math.floor((gap % (menit) / (detik)));
-
-    if (h < 10) {
-        h = "0" + h;
-    }
-    if (j < 10) {
-        j = "0" + j;
-    }
-    if (m < 10) {
-        m = "0" + m;
-    }
-    if (d < 10) {
-        d = "0" + d;
-    }
-
-
-    document.getElementById("geografi").innerHTML = h + " Hari, " + j + " Jam, " + m + " Menit, " + d + " Detik.";
-
-    if (h <= 0) {
-        document.getElementById("geografi").innerHTML = j + " Jam, " + m + " Menit, " + d + " Detik.";
-    }
-    if (j <= 0) {
-        document.getElementById("geografi").innerHTML = m + " Menit, " + d + " Detik.";
-        document.getElementById("senbud").style.color = "#FD8C04";
-    }
-    if (m <= 0) {
-        document.getElementById("geografi").innerHTML = d + " Detik.";
-    }
-
-    if (gap < 0) {
-        clearInterval(b);
-        document.getElementById("geografi").innerHTML = "Telah lewat tenggat waktu!";
-        document.getElementById("geografi").style.color = "#FF0000";
-    }
-
-}, 1000);
-
-// senbud
-var countDateSenbud = new Date('October 04 2021 24:00:00').getTime();
-var e = setInterval(function () {
-    var now = new Date().getTime();
-    gap = countDateSenbud - now
-
-    var detik = 1000;
-    var menit = detik * 60;
-    var jam = menit * 60;
-    var hari = jam * 24;
-
-    var h = Math.floor(gap / (hari));
-    var j = Math.floor((gap % (hari)) / (jam));
-    var m = Math.floor((gap % (jam)) / (menit));
-    var d = Math.floor((gap % (menit) / (detik)));
-
-    if (h < 10) {
-        h = "0" + h;
-    }
-    if (j < 10) {
-        j = "0" + j;
-    }
-    if (m < 10) {
-        m = "0" + m;
-    }
-    if (d < 10) {
-        d = "0" + d;
-    }
-
-    document.getElementById("senbud").innerHTML = h + " Hari, " + j + " Jam, " + m + " Menit, " + d + " Detik.";
-
-    if (h <= 0) {
-        document.getElementById("senbud").innerHTML = j + " Jam, " + m + " Menit, " + d + " Detik.";
-    }
-    if (j <= 0) {
-        document.getElementById("senbud").innerHTML = m + " Menit, " + d + " Detik.";
-        document.getElementById("senbud").style.color = "#FD8C04";
-    }
-    if (m <= 0) {
-        document.getElementById("senbud").innerHTML = d + " Detik.";
-    }
-
-    if (gap < 0) {
-        clearInterval(e);
-        document.getElementById("senbud").innerHTML = "Telah lewat tenggat waktu!";
-        document.getElementById("senbud").style.color = "#FF0000";
+        document.getElementById("sejindo").innerHTML = "Telah lewat tenggat waktu!";
+        document.getElementById("sejindo").style.color = "#FF0000";
     }
 
 }, 1000);
