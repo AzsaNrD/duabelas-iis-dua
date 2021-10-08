@@ -78,7 +78,6 @@ var clock = setInterval(
 
             if (hr >= 3) {
                 document.getElementById("waktu").innerHTML = "Selamat Pagi";
-                document.getElementById("absent").style.display = "none";
             }
             
             if (hr >= 11) {
@@ -92,8 +91,7 @@ var clock = setInterval(
             if (hr >= 19) {
                 document.getElementById("waktu").innerHTML = "Selamat Malam";
             }
-        }
-        if (week[dname] == 'Minggu') {
+        } else if (week[dname] == 'Minggu') {
             document.getElementById("absent").style.display = "none";
 
             if (hr >= 3) {
@@ -112,7 +110,6 @@ var clock = setInterval(
             if (hr >= 19) {
                 document.getElementById("waktu").innerHTML = "Selamat Malam";
             }
-
         } else {
             document.getElementById("absent").style.display = "";
 
