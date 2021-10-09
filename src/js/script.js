@@ -96,7 +96,6 @@ var clock = setInterval(
 
             if (hr >= 3) {
                 document.getElementById("waktu").innerHTML = "Selamat Pagi";
-                document.getElementById("absent").style.display = "none";
             }
             
             if (hr >= 11) {
