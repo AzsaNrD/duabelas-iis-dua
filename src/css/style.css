@@ -195,6 +195,16 @@ table {
     table-layout: fixed;
 }
 
+.InfoPTM {
+    display: inline;
+    background-color: #12917e;
+}
+
+#infoJadwalGambar {
+    display: flex;
+    justify-content: center;
+}
+
 /* tabel agenda */
 .tabel-agenda,
 tr,

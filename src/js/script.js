@@ -202,26 +202,65 @@ var a = setInterval(function () {
 
 }, 1000);
 
+// Jadwal Pelajaran ganti hari
+const senin = document.getElementById('senin');
+const selasa = document.getElementById('selasa');
+const rabu = document.getElementById('rabu');
+const kamis = document.getElementById('kamis');
+const jumat = document.getElementById('jumat');
+const teks = document.getElementById('infoJadwal');
+const gambar = document.getElementById('infoJadwalGambar');
+
+if (week[dname] == 'Senin') {
+    senin.style.display = '';
+    teks.textContent = 'Pelajaran hari ini adalah :';
+    gambar.style.display = 'none'
+} else if (week[dname] == 'Selasa') {
+    selasa.style.display = '';
+    teks.textContent = 'Pelajaran hari ini adalah :';
+    gambar.style.display = 'none'
+} else if (week[dname] == 'Selasa') {
+    rabu.style.display = '';
+    teks.textContent = 'Pelajaran hari ini adalah :';
+    gambar.style.display = 'none'
+} else if (week[dname] == 'Rabu') {
+    kamis.style.display = '';
+    teks.textContent = 'Pelajaran hari ini adalah :';
+    gambar.style.display = 'none'
+} else if (week[dname] == 'Kamis') {
+    jumat.style.display = '';
+    teks.textContent = 'Pelajaran hari ini adalah :';
+    gambar.style.display = 'none'
+}  else {
+    senin.style.display = 'none';
+    selasa.style.display = 'none';
+    rabu.style.display = 'none';
+    kamis.style.display = 'none';
+    jumat.style.display = 'none';
+    gambar.style.display = ''
+    teks.textContent = 'Hari ini tidak ada jadwal pelajaran..';
+}
+
 
 // Jadwal Pelajaran Filter
-const filterItem = document.querySelector('.jadwalFilter');
-const filterBox = document.querySelectorAll('.itemBox');
+// const filterItem = document.querySelector('.jadwalFilter');
+// const filterBox = document.querySelectorAll('.itemBox');
 
-window.onload = () => {
-    filterItem.onclick = (selectedItem) => {
-        if (selectedItem.target.classList.contains("list")) {
-            filterItem.querySelector(".active").classList.remove("active");
-            selectedItem.target.classList.add("active");
-            let filterName = selectedItem.target.getAttribute("data-name");
-            filterBox.forEach((itemBox) => {
-                let filterJadwal = itemBox.getAttribute("data-name");
-                if ((filterJadwal == filterName) || filterName == "semua") {
-                    itemBox.classList.add("show");
-                } else {
-                    itemBox.classList.add("hide");
-                    itemBox.classList.remove("show");
-                }
-            });
-        }
-    }
-}
+// window.onload = () => {
+//     filterItem.onclick = (selectedItem) => {
+//         if (selectedItem.target.classList.contains("list")) {
+//             filterItem.querySelector(".active").classList.remove("active");
+//             selectedItem.target.classList.add("active");
+//             let filterName = selectedItem.target.getAttribute("data-name");
+//             filterBox.forEach((itemBox) => {
+//                 let filterJadwal = itemBox.getAttribute("data-name");
+//                 if ((filterJadwal == filterName) || filterName == "semua") {
+//                     itemBox.classList.add("show");
+//                 } else {
+//                     itemBox.classList.add("hide");
+//                     itemBox.classList.remove("show");
+//                 }
+//             });
+//         }
+//     }
+// }
