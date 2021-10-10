@@ -209,35 +209,59 @@ const rabu = document.getElementById('rabu');
 const kamis = document.getElementById('kamis');
 const jumat = document.getElementById('jumat');
 const teks = document.getElementById('infoJadwal');
-const gambar = document.getElementById('infoJadwalGambar');
+const seninBesok = document.getElementById('infoSeninBesok');
+const selasaBesok = document.getElementById('infoSelasaBesok');
+const rabuBesok = document.getElementById('infoRabuBesok');
+const kamisBesok = document.getElementById('infoKamisBesok');
+const jumatBesok = document.getElementById('infoJumatBesok');
 
 if (week[dname] == 'Senin') {
     senin.style.display = '';
-    teks.textContent = 'Pelajaran hari ini adalah :';
-    gambar.style.display = 'none'
+    teks.textContent = 'Pelajaran hari ini adalah';
+    seninBesok.style.display = 'none';
+    selasa.style.display = '';
+    rabu.style.display = 'none';
+    kamis.style.display = 'none';
+    jumat.style.display = 'none';
 } else if (week[dname] == 'Selasa') {
     selasa.style.display = '';
-    teks.textContent = 'Pelajaran hari ini adalah :';
-    gambar.style.display = 'none'
-} else if (week[dname] == 'Selasa') {
+    teks.textContent = 'Pelajaran hari ini adalah';
+    selasaBesok.style.display = 'none';
     rabu.style.display = '';
-    teks.textContent = 'Pelajaran hari ini adalah :';
-    gambar.style.display = 'none'
+    rabu.style.display = 'none';
+    kamis.style.display = 'none';
+    jumat.style.display = 'none';
 } else if (week[dname] == 'Rabu') {
+    rabu.style.display = '';
+    teks.textContent = 'Pelajaran hari ini adalah';
+    rabuBesok.style.display = 'none';
     kamis.style.display = '';
-    teks.textContent = 'Pelajaran hari ini adalah :';
-    gambar.style.display = 'none'
+    rabu.style.display = 'none';
+    kamis.style.display = 'none';
+    jumat.style.display = 'none';
 } else if (week[dname] == 'Kamis') {
+    kamis.style.display = '';
+    teks.textContent = 'Pelajaran hari ini adalah';
+    kamisBesok.style.display = 'none';
     jumat.style.display = '';
-    teks.textContent = 'Pelajaran hari ini adalah :';
-    gambar.style.display = 'none'
+    rabu.style.display = 'none';
+    kamis.style.display = 'none';
+    jumat.style.display = 'none';
+} else if (week[dname] == 'Jumat') {
+    jumat.style.display = '';
+    teks.textContent = 'Pelajaran hari ini adalah';
+    jumatBesok.style.display = 'none';
+    rabu.style.display = 'none';
+    kamis.style.display = 'none';
+    jumat.style.display = 'none';
 }  else {
-    senin.style.display = 'none';
+
+    senin.style.display = '';
+    seninBesok.style.display = ''
     selasa.style.display = 'none';
     rabu.style.display = 'none';
     kamis.style.display = 'none';
     jumat.style.display = 'none';
-    gambar.style.display = ''
     teks.textContent = 'Hari ini tidak ada jadwal pelajaran..';
 }
 
