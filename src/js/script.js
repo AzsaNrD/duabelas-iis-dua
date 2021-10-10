@@ -255,7 +255,6 @@ if (week[dname] == 'Senin') {
     kamis.style.display = 'none';
     jumat.style.display = 'none';
 }  else {
-
     senin.style.display = '';
     seninBesok.style.display = ''
     selasa.style.display = 'none';
