@@ -259,9 +259,13 @@ if (week[dname] == 'Senin') {
     senin.style.display = '';
     seninBesok.style.display = ''
     selasa.style.display = 'none';
+    selasaBesok.style.display = 'none'
     rabu.style.display = 'none';
+    rabuBesok.style.display = 'none'
     kamis.style.display = 'none';
+    kamisBesok.style.display = 'none'
     jumat.style.display = 'none';
+    jumatBesok.style.display = 'none'
     teks.textContent = 'Hari ini tidak ada jadwal pelajaran..';
 }
 
