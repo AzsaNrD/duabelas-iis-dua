@@ -224,36 +224,55 @@ if (week[dname] == 'Senin') {
     kamis.style.display = 'none';
     jumat.style.display = 'none';
 } else if (week[dname] == 'Selasa') {
+    senin.style.display = 'none'
+    seninBesok.style.display = 'none'
     selasa.style.display = '';
     teks.textContent = 'Pelajaran hari ini adalah';
     selasaBesok.style.display = 'none';
     rabu.style.display = '';
-    rabu.style.display = 'none';
+    rabuBesok.style.display = '';
     kamis.style.display = 'none';
+    kamisBesok.style.display = 'none';
     jumat.style.display = 'none';
+    jumatBesok.style.display = 'none';
 } else if (week[dname] == 'Rabu') {
+    senin.style.display = 'none'
+    seninBesok.style.display = 'none'
+    selasa.style.display = 'none'
+    selasaBesok.style.display = 'none'
     rabu.style.display = '';
     teks.textContent = 'Pelajaran hari ini adalah';
     rabuBesok.style.display = 'none';
     kamis.style.display = '';
-    rabu.style.display = 'none';
-    kamis.style.display = 'none';
+    kamisBesok.style.display = '';
     jumat.style.display = 'none';
+    jumatBesok.style.display = 'none';
 } else if (week[dname] == 'Kamis') {
+    senin.style.display = 'none'
+    seninBesok.style.display = 'none'
+    selasa.style.display = 'none'
+    selasaBesok.style.display = 'none'
+    rabu.style.display = 'none'
+    rabuBesok.style.display = 'none'
     kamis.style.display = '';
+    kamisBesok.style.display = 'none';
     teks.textContent = 'Pelajaran hari ini adalah';
+    jumat.style.display = '';
+    jumatBesok.style.display = '';
+} else if (week[dname] == 'Jumat') {
+    senin.style.display = 'none'
+    seninBesok.style.display = 'none'
+    selasa.style.display = 'none'
+    selasaBesok.style.display = 'none'
+    kamis.style.display = 'none'
+    kamisBesok.style.display = 'none'
+    teks.textContent = 'Pelajaran hari ini adalah';
+    rabu.style.display = 'none';
+    rabuBesok.style.display = 'none';
+    kamis.style.display = 'none';
     kamisBesok.style.display = 'none';
     jumat.style.display = '';
-    rabu.style.display = 'none';
-    kamis.style.display = 'none';
-    jumat.style.display = 'none';
-} else if (week[dname] == 'Jumat') {
-    jumat.style.display = '';
-    teks.textContent = 'Pelajaran hari ini adalah';
     jumatBesok.style.display = 'none';
-    rabu.style.display = 'none';
-    kamis.style.display = 'none';
-    jumat.style.display = 'none';
 }  else {
     senin.style.display = '';
     seninBesok.style.display = ''
