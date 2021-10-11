@@ -223,6 +223,12 @@ if (week[dname] == 'Senin') {
     rabu.style.display = 'none';
     kamis.style.display = 'none';
     jumat.style.display = 'none';
+    selasaBesok.style.display = '';
+    rabuBesok.style.display = 'none';
+    kamis.style.display = 'none';
+    kamisBesok.style.display = 'none';
+    jumat.style.display = 'none';
+    jumatBesok.style.display = 'none';
 } else if (week[dname] == 'Selasa') {
     senin.style.display = 'none'
     seninBesok.style.display = 'none'
