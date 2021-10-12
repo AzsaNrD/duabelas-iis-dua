@@ -151,11 +151,11 @@ var clock = setInterval(
 
 // Deadline
 
-// sejindo
-var countDateSejindo = new Date('October 09 2021 12:00:00').getTime();
+// sunda
+var countDateSunda= new Date('October 13 2021 24:00:00').getTime();
 var a = setInterval(function () {
     var now = new Date().getTime();
-    gap = countDateSejindo - now
+    gap = countDateSunda - now
 
     var detik = 1000;
     var menit = detik * 60;
@@ -180,24 +180,24 @@ var a = setInterval(function () {
         d = "0" + d;
     }
 
-    document.getElementById("sejindo").innerHTML = h + " Hari, " + j + " Jam, " + m + " Menit, " + d + " Detik.";
+    document.getElementById("sunda").innerHTML = h + " Hari, " + j + " Jam, " + m + " Menit, " + d + " Detik.";
 
     if (h <= 0) {
-        document.getElementById("sejindo").innerHTML = j + " Jam, " + m + " Menit, " + d + " Detik.";
+        document.getElementById("sunda").innerHTML = j + " Jam, " + m + " Menit, " + d + " Detik.";
     }
     if (j <= 0) {
-        document.getElementById("sejindo").innerHTML = m + " Menit, " + d + " Detik.";
-        document.getElementById("sejindo").style.color = "#FD8C04";
+        document.getElementById("sunda").innerHTML = m + " Menit, " + d + " Detik.";
+        document.getElementById("sunda").style.color = "#FD8C04";
     }
 
     if (m <= 0) {
-        document.getElementById("sejindo").innerHTML = d + " Detik.";
+        document.getElementById("sunda").innerHTML = d + " Detik.";
     }
 
     if (gap < 0) {
         clearInterval(a);
-        document.getElementById("sejindo").innerHTML = "Telah lewat tenggat waktu!";
-        document.getElementById("sejindo").style.color = "#FF0000";
+        document.getElementById("sunda").innerHTML = "Telah lewat tenggat waktu!";
+        document.getElementById("sunda").style.color = "#FF0000";
     }
 
 }, 1000);
