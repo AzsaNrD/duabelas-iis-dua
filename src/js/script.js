@@ -151,11 +151,11 @@ var clock = setInterval(
 
 // Deadline
 
-// sunda
-var countDateSunda= new Date('October 21 2021 24:00:00').getTime();
+// Inggris
+var countDateInggris= new Date('October 21 2021 24:00:00').getTime();
 var a = setInterval(function () {
     var now = new Date().getTime();
-    gap = countDateSunda - now
+    gap = countDateInggris - now
 
     var detik = 1000;
     var menit = detik * 60;
