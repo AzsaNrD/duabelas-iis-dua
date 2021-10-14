@@ -265,7 +265,7 @@ if (week[dname] == 'Senin') {
     teks.textContent = 'Pelajaran hari ini adalah';
     jumat.style.display = '';
     jumatBesok.style.display = '';
-} else if (week[dname] == 'Jumat') {
+} else if (week[dname] == "Jum'at") {
     senin.style.display = 'none'
     seninBesok.style.display = 'none'
     selasa.style.display = 'none'
