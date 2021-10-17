@@ -152,7 +152,7 @@ var clock = setInterval(
 // Deadline
 
 // Inggris
-var countDateInggris= new Date('October 21 2021 24:00:00').getTime();
+var countDateInggris= new Date('October 17 2021 21:00:00').getTime();
 var a = setInterval(function () {
     var now = new Date().getTime();
     gap = countDateInggris - now
