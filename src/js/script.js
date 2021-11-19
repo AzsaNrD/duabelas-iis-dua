@@ -203,158 +203,158 @@ var clock = setInterval(
 // }, 1000);
 
 // Senbud
-var countDateSenbud= new Date('November 9 2021 24:00:00').getTime();
-var a = setInterval(function () {
-    var now = new Date().getTime();
-    gap = countDateSenbud - now
+// var countDateSenbud= new Date('November 9 2021 24:00:00').getTime();
+// var a = setInterval(function () {
+//     var now = new Date().getTime();
+//     gap = countDateSenbud - now
 
-    var detik = 1000;
-    var menit = detik * 60;
-    var jam = menit * 60;
-    var hari = jam * 24;
+//     var detik = 1000;
+//     var menit = detik * 60;
+//     var jam = menit * 60;
+//     var hari = jam * 24;
 
-    var h = Math.floor(gap / (hari));
-    var j = Math.floor((gap % (hari)) / (jam));
-    var m = Math.floor((gap % (jam)) / (menit));
-    var d = Math.floor((gap % (menit) / (detik)));
+//     var h = Math.floor(gap / (hari));
+//     var j = Math.floor((gap % (hari)) / (jam));
+//     var m = Math.floor((gap % (jam)) / (menit));
+//     var d = Math.floor((gap % (menit) / (detik)));
 
-    if (h < 10) {
-        h = "0" + h;
-    }
-    if (j < 10) {
-        j = "0" + j;
-    }
-    if (m < 10) {
-        m = "0" + m;
-    }
-    if (d < 10) {
-        d = "0" + d;
-    }
+//     if (h < 10) {
+//         h = "0" + h;
+//     }
+//     if (j < 10) {
+//         j = "0" + j;
+//     }
+//     if (m < 10) {
+//         m = "0" + m;
+//     }
+//     if (d < 10) {
+//         d = "0" + d;
+//     }
 
-    document.getElementById("senbud").innerHTML = h + " Hari, " + j + " Jam, " + m + " Menit, " + d + " Detik.";
+//     document.getElementById("senbud").innerHTML = h + " Hari, " + j + " Jam, " + m + " Menit, " + d + " Detik.";
 
-    if (h <= 0) {
-        document.getElementById("senbud").innerHTML = j + " Jam, " + m + " Menit, " + d + " Detik.";
-    }
-    if (j <= 0) {
-        document.getElementById("senbud").innerHTML = m + " Menit, " + d + " Detik.";
-        document.getElementById("senbud").style.color = "#FD8C04";
-    }
+//     if (h <= 0) {
+//         document.getElementById("senbud").innerHTML = j + " Jam, " + m + " Menit, " + d + " Detik.";
+//     }
+//     if (j <= 0) {
+//         document.getElementById("senbud").innerHTML = m + " Menit, " + d + " Detik.";
+//         document.getElementById("senbud").style.color = "#FD8C04";
+//     }
 
-    if (m <= 0) {
-        document.getElementById("senbud").innerHTML = d + " Detik.";
-    }
+//     if (m <= 0) {
+//         document.getElementById("senbud").innerHTML = d + " Detik.";
+//     }
 
-    if (gap < 0) {
-        clearInterval(a);
-        document.getElementById("senbud").innerHTML = "Telah lewat tenggat waktu!";
-        document.getElementById("senbud").style.color = "#FF0000";
-    }
+//     if (gap < 0) {
+//         clearInterval(a);
+//         document.getElementById("senbud").innerHTML = "Telah lewat tenggat waktu!";
+//         document.getElementById("senbud").style.color = "#FF0000";
+//     }
 
-}, 1000);
+// }, 1000);
 
 
 // Pkwu
-var countDatePkwu= new Date('November 11 2021 24:00:00').getTime();
-var a = setInterval(function () {
-    var now = new Date().getTime();
-    gap = countDatePkwu - now
+// var countDatePkwu= new Date('November 11 2021 24:00:00').getTime();
+// var a = setInterval(function () {
+//     var now = new Date().getTime();
+//     gap = countDatePkwu - now
 
-    var detik = 1000;
-    var menit = detik * 60;
-    var jam = menit * 60;
-    var hari = jam * 24;
+//     var detik = 1000;
+//     var menit = detik * 60;
+//     var jam = menit * 60;
+//     var hari = jam * 24;
 
-    var h = Math.floor(gap / (hari));
-    var j = Math.floor((gap % (hari)) / (jam));
-    var m = Math.floor((gap % (jam)) / (menit));
-    var d = Math.floor((gap % (menit) / (detik)));
+//     var h = Math.floor(gap / (hari));
+//     var j = Math.floor((gap % (hari)) / (jam));
+//     var m = Math.floor((gap % (jam)) / (menit));
+//     var d = Math.floor((gap % (menit) / (detik)));
 
-    if (h < 10) {
-        h = "0" + h;
-    }
-    if (j < 10) {
-        j = "0" + j;
-    }
-    if (m < 10) {
-        m = "0" + m;
-    }
-    if (d < 10) {
-        d = "0" + d;
-    }
+//     if (h < 10) {
+//         h = "0" + h;
+//     }
+//     if (j < 10) {
+//         j = "0" + j;
+//     }
+//     if (m < 10) {
+//         m = "0" + m;
+//     }
+//     if (d < 10) {
+//         d = "0" + d;
+//     }
 
-    document.getElementById("pkwu").innerHTML = h + " Hari, " + j + " Jam, " + m + " Menit, " + d + " Detik.";
+//     document.getElementById("pkwu").innerHTML = h + " Hari, " + j + " Jam, " + m + " Menit, " + d + " Detik.";
 
-    if (h <= 0) {
-        document.getElementById("pkwu").innerHTML = j + " Jam, " + m + " Menit, " + d + " Detik.";
-    }
-    if (j <= 0) {
-        document.getElementById("pkwu").innerHTML = m + " Menit, " + d + " Detik.";
-        document.getElementById("pkwu").style.color = "#FD8C04";
-    }
+//     if (h <= 0) {
+//         document.getElementById("pkwu").innerHTML = j + " Jam, " + m + " Menit, " + d + " Detik.";
+//     }
+//     if (j <= 0) {
+//         document.getElementById("pkwu").innerHTML = m + " Menit, " + d + " Detik.";
+//         document.getElementById("pkwu").style.color = "#FD8C04";
+//     }
 
-    if (m <= 0) {
-        document.getElementById("pkwu").innerHTML = d + " Detik.";
-    }
+//     if (m <= 0) {
+//         document.getElementById("pkwu").innerHTML = d + " Detik.";
+//     }
 
-    if (gap < 0) {
-        clearInterval(a);
-        document.getElementById("pkwu").innerHTML = "Telah lewat tenggat waktu!";
-        document.getElementById("pkwu").style.color = "#FF0000";
-    }
+//     if (gap < 0) {
+//         clearInterval(a);
+//         document.getElementById("pkwu").innerHTML = "Telah lewat tenggat waktu!";
+//         document.getElementById("pkwu").style.color = "#FF0000";
+//     }
 
-}, 1000);
+// }, 1000);
 
 // mtk
-var countDateMtk= new Date('October 29 2021 24:00:00').getTime();
-var a = setInterval(function () {
-    var now = new Date().getTime();
-    gap = countDateMtk - now
+// var countDateMtk= new Date('October 29 2021 24:00:00').getTime();
+// var a = setInterval(function () {
+//     var now = new Date().getTime();
+//     gap = countDateMtk - now
 
-    var detik = 1000;
-    var menit = detik * 60;
-    var jam = menit * 60;
-    var hari = jam * 24;
+//     var detik = 1000;
+//     var menit = detik * 60;
+//     var jam = menit * 60;
+//     var hari = jam * 24;
 
-    var h = Math.floor(gap / (hari));
-    var j = Math.floor((gap % (hari)) / (jam));
-    var m = Math.floor((gap % (jam)) / (menit));
-    var d = Math.floor((gap % (menit) / (detik)));
+//     var h = Math.floor(gap / (hari));
+//     var j = Math.floor((gap % (hari)) / (jam));
+//     var m = Math.floor((gap % (jam)) / (menit));
+//     var d = Math.floor((gap % (menit) / (detik)));
 
-    if (h < 10) {
-        h = "0" + h;
-    }
-    if (j < 10) {
-        j = "0" + j;
-    }
-    if (m < 10) {
-        m = "0" + m;
-    }
-    if (d < 10) {
-        d = "0" + d;
-    }
+//     if (h < 10) {
+//         h = "0" + h;
+//     }
+//     if (j < 10) {
+//         j = "0" + j;
+//     }
+//     if (m < 10) {
+//         m = "0" + m;
+//     }
+//     if (d < 10) {
+//         d = "0" + d;
+//     }
 
-    document.getElementById("mtk").innerHTML = h + " Hari, " + j + " Jam, " + m + " Menit, " + d + " Detik.";
+//     document.getElementById("mtk").innerHTML = h + " Hari, " + j + " Jam, " + m + " Menit, " + d + " Detik.";
 
-    if (h <= 0) {
-        document.getElementById("mtk").innerHTML = j + " Jam, " + m + " Menit, " + d + " Detik.";
-    }
-    if (j <= 0) {
-        document.getElementById("mtk").innerHTML = m + " Menit, " + d + " Detik.";
-        document.getElementById("mtk").style.color = "#FD8C04";
-    }
+//     if (h <= 0) {
+//         document.getElementById("mtk").innerHTML = j + " Jam, " + m + " Menit, " + d + " Detik.";
+//     }
+//     if (j <= 0) {
+//         document.getElementById("mtk").innerHTML = m + " Menit, " + d + " Detik.";
+//         document.getElementById("mtk").style.color = "#FD8C04";
+//     }
 
-    if (m <= 0) {
-        document.getElementById("mtk").innerHTML = d + " Detik.";
-    }
+//     if (m <= 0) {
+//         document.getElementById("mtk").innerHTML = d + " Detik.";
+//     }
 
-    if (gap < 0) {
-        clearInterval(a);
-        document.getElementById("mtk").innerHTML = "Telah lewat tenggat waktu!";
-        document.getElementById("mtk").style.color = "#FF0000";
-    }
+//     if (gap < 0) {
+//         clearInterval(a);
+//         document.getElementById("mtk").innerHTML = "Telah lewat tenggat waktu!";
+//         document.getElementById("mtk").style.color = "#FF0000";
+//     }
 
-}, 1000);
+// }, 1000);
 
 // Jadwal Pelajaran ganti hari
 const senin = document.getElementById('senin');
